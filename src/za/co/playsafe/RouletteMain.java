@@ -17,7 +17,7 @@ public class RouletteMain {
 
 	       Scanner keyboard = new Scanner(System.in);
 	       Random generator = new Random();
-	       double total = 500;
+	       double total = 1000;
 	       double amount;
 	       int choice, win = 0, lose = 0, spin = 0;
 	       int number;
@@ -47,7 +47,7 @@ public class RouletteMain {
 	       while (response == 'y' || response == 'Y' && total <= 0)
 	       {
 	    	   String name = null;
-	    	   System.out.print("Enter your Player Name: ");
+	    	   System.out.print("Enter Player Name between Muzi and Danielle: ");
 	    	   String p1 = keyboard.nextLine();
 	    	   for(String str: playerNames) {
 	    		   if(str.equals(p1)) {
